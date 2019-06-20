@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html> 
+<head>	
+	<link href="jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<link href="jquery-ui-1.11.4/jquery-ui.structure.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link href="jquery-ui-1.11.4/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.11.4/jquery-ui.js"></script>
+	
+</head>
+
+<body>  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<h1>Range Slider</h1>
+    <div id="slider-range">
+    	<span class="min">Min</span>
+    	<span class="max">Max</span>
+    </div>
+    <ul id="products">
+            <li data-price="500"> <div class="col-md-3 col-sm-6" >
+       			 <div class="product-grid">
+            <div class="product-image">
+                <a href="#">
+                    <img class="imgs img-responsive" src="images/img-1.jpg">                    
+                </a>
+             	<div class="product-discount-label" > 3 <span class=" glyphicon glyphicon-star"></span></div>
+            </div>
+           
+            <div class="product-content">
+                <h3 class="title"><a href="#"></a></h3>
+                <div id="1" class="price">
+                    <span>800</span>
+                </div>
+                <a class="offers" href=""></a>
+            </div>
+		       </div>
+		   	</div>
+		</li>
+	         <li data-price="1200"> <div class="col-md-3 col-sm-6">
+	      		  <div class="product-grid">
+	            		<div class="product-image">
+			                <a href="#">
+			                    <img class="imgs img-responsive" src="images/img-2.jpg">                    
+			                </a>
+	               			<div class="product-discount-label" > 4.5 <span class=" glyphicon glyphicon-star"></span></div>
+	            		</div>
+	           
+	            <div class="product-content">
+	                <h3 class="title"><a href="#"></a></h3>
+	                <div id="2" class="price">
+	                    <span>1500</span>
+	                </div>
+	                <a class="offers" href=""></a>
+	            </div>
+	        </div>
+	   		 </div>
+		</li>         
+      
+		 <li data-price="800"> <div class="col-md-3 col-sm-6">
+	      		  <div class="product-grid">
+	            		<div class="product-image">
+			                <a href="#">
+			                    <img class="imgs img-responsive" src="images/img-3.jpg">                    
+			                </a>
+	              		 <div class="product-discount-label" > 4 <span class=" glyphicon glyphicon-star"></span></div>
+	            		</div>
+	           
+	            <div class="product-content">
+	                <h3 class="title"><a href="#"></a></h3>
+	                <div id="3" class="price">
+	                    <span>800</span>
+	                </div>
+	                <a class="offers" href=""></a>
+	            </div>
+	        </div>
+	   		 </div>
+			</li> 	
+	 	<li data-price="1500"> <div class="col-md-3 col-sm-6">
+	      		  <div class="product-grid">
+	            		<div class="product-image">
+			                <a href="#">
+			                    <img class="imgs img-responsive" src="images/img-4.jpg">                    
+			                </a>
+	               
+	               			<div class="product-discount-label" > 4.9 <span class=" glyphicon glyphicon-star"></span></div>
+	            		</div>
+	           
+	            <div class="product-content">
+	                <h3 class="title"><a href="#"></a></h3>
+	                <div id="4" class="price">
+	                    <span>2000</span>
+	                </div>
+	                <a class="offers" href=""></a>
+	            </div>
+	        </div>
+	   		 </div>
+			</li> 
+		 </ul>
+		 
+    </div>
+	<div class="price-tag">
+        <label for="amount">Price range (Min - Max):</label>
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+    </div>
+<!--  <div class="brandList"> 
+                  <label>Select Brands</label>
+                    <ul id="filters" style="list-style:none;">
+                      <li>
+                        <input type="checkbox" value="10" id="ms">
+                        <label for="ms">M&S</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" value="11" id="arrow" >
+                        <label for="Arrow">Arrow</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" value="13" id="levis">
+                        <label for="levis">Levis</label>
+                      </li>   
+                      <li>
+                        <input type="checkbox" value="13" id="guess">
+                        <label for="guess">Guess</label>
+                      </li>          
+                    </ul>
+                </div> -->
+   <!--  <footer class="container-fluid text-center">
+ 	 <p>Footer Text</p>
+	</footer> -->
+
+<script type="text/javascript" src="js/main.js"></script>
+</body> 
+
+</html> 
